@@ -7,11 +7,13 @@
 import time, os, sys
 
 # default values for logger
-defaultuser=os.getlogin()
-defaultprogram=sys.argv[0]
+debug=False
+user=os.getlogin()
+program=sys.argv[0]
 defaultlogfile="simple.log"
+action="log line"
 
-def logger(debug = False, user = defaultuser, program = defaultprogram, action = "log line"):
+def logger(*action):
   #debug = True
   NOW=time.strftime('%Y/%m/%d %H:%M:%S ')
   if debug == True:
