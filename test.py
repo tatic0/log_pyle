@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import lololo as logpyle
+import logpyle
 import time,os,sys
 
 A=sys.platform
