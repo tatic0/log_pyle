@@ -1,11 +1,12 @@
 #!/usr/bin/env python
-import logpyle, time
+import lololo as logpyle
+import time
 
 # stupid test script
 counter=1
 while counter<10:
   #print counter
   logpyle.logger()
-  logpyle.logger(True,"other_user","custom_program","CRITICAL ERROR")
+  logpyle.logger(user="other_user",program="custom_program",action="CRITICAL ERROR")
   counter += 1
   time.sleep(1)
