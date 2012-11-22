@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import logpyle, time
 
 # stupid test script
