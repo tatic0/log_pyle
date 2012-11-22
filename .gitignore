@@ -1,5 +1,8 @@
 *.py[cod]
 
+# vi swp file
+*.swp
+
 # log files
 *.log
 

@@ -12,7 +12,7 @@ defaultuser=os.getlogin()
 defaultprogram=sys.argv[0]
 defaultlogfile="simple.log"
 
-def logger(debug = False, user = defaultuser, program = defaultprogram, logfile = defaultlogfile):
+def logger(debug = False, user = defaultuser, program = defaultprogram, action = "log line"):
   NOW=time.strftime('%Y/%m/%d %H:%M:%S ')
   if debug == True:
     print("debug mode on")
