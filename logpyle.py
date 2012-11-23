@@ -4,14 +4,20 @@
 # simple python logging facility
 
 # python imports
-import time, os, sys
+import time, os, sys,ConfigParser
+
+config = ConfigParser.RawConfigParser()
+config.read('simple.conf')
+defaultlogfile=config.get('logfile','logfile')
+action=config.get('action','action')
+
 
 # default values for logger
 debug=False
 user=os.getlogin()
 program=sys.argv[0]
-defaultlogfile="simple.log"
-action="log line"
+#defaultlogfile="simple.log"
+#action="log line"
 
 def logger(*action):
   #debug = True
