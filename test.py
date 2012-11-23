@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import logpyle
-import time,os,sys
+import time,os,sys,random
 
 A=sys.platform
 B="string, sexy string"
@@ -11,4 +11,4 @@ while counter<10:
   logpyle.logger("some other useless action", A)
   logpyle.logger("CRITICAL ERROR", B)
   counter += 1
-  time.sleep(1)
+  time.sleep(random.randrange(1,10))

@@ -20,7 +20,7 @@ def logger(*action):
     print("debug mode on")
     print("timestap: %s user: %s program: %s action: %s") %(NOW,user,program,action)
   logging = open(defaultlogfile,'a')
-  data=("%s %s %s %s\n") %(NOW,user,program,action)
+  data=("%s %s %s %s\n") %(NOW,user,program,str(action))
   logging.write(data)
   logging.close()
 
