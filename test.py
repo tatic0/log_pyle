@@ -8,7 +8,7 @@ A=sys.platform
 B="string, sexy string"
 counter=1
 while counter<10:
-  #print counter
+  print counter
   logpyle.logger("some other useless action", A)
   logpyle.logger("CRITICAL ERROR", B)
   logpyle.logger()

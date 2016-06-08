@@ -25,10 +25,10 @@ def logger(*action):
   #debug = True
   current_time = time.strftime('%Y/%m/%d %H:%M:%S ')
   if debug == True:
-    print "debug mode on"
-    print "timestap: %s user: %s program: %s action: %s" %(current_time, user, program, action)
+    print("debug mode on")
+    print("timestap: {} user: {} program: {} action: {}".format(current_time, user, program, action))
   logging = open(defaultlogfile, 'a')
-  data = ("%s %s %s %s\n") %(current_time, user, program, action)
+  data = ("{} {} {} {}\n".format(current_time, user, program, action))
   logging.write(data)
   logging.close()
 
